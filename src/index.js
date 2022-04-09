@@ -30,3 +30,11 @@ console.log(val3);
 
 // const変数は再宣言不可
 // const val3 = "const変数の再宣言";
+
+const val4 = {
+  name: "manami",
+  age: 24
+};
+val4.name = "mana";
+val4.address = "yokohama";
+console.log(val4);
