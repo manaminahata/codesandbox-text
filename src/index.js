@@ -42,8 +42,46 @@
 /**
  * テンプレート文字列
  */
+// const name = "manami";
+// const age = 24;
+// // 「私の名前はmanamiです。年齢は24歳です。」
+// console.log(`私の名前は${name}です。年齢は${age}歳です。`);
 
-const name = "manami";
-const age = 24;
-// 「私の名前はmanamiです。年齢は24歳です。」
-console.log(`私の名前は${name}です。年齢は${age}歳です。`);
+/**
+ * アロー関数
+ */
+// 従来の関数
+// function func1(str) {
+//   return str;
+// }
+// console.log(func1("func1です"));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("func1です"));
+
+// アロー関数
+//
+/**
+ * 分割代入
+ */
+// const myProfile = {
+//   name: "manami",
+//   age: 24
+// };
+
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}です。`;
+// console.log(message1);
+
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+const myProfile = ["manami", 24];
+
+const message1 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+console.log(message1);
+
+const [name, age] = myProfile;
+const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
+console.log(message2);
